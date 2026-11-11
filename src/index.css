@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import "tailwindcss";
+
+
+* {
+  font-family: jura;
+  /* color: rgb(55, 0, 60); */
+  /* background-color: rgb(250, 249, 250);; */
+}
+
+@theme {
+  --color-primary: rgb(55, 0, 60);
+  --color-background: rgb(250, 249, 250);
+}
+
+.mainNavbar{
+     @apply hover:bg-slate-100 rounded-full px-4 py-2;
+}
+
+@import "tailwindcss";
+
+.player-data {
+    @apply flex flex-col gap-2
+    bg-gray-900/80
+    border border-gray-700/60
+    rounded-xl
+    p-4
+    text-white
+    text-base
+    font-semibold
+    transition-all duration-300
+    hover:border-green-500
+    hover:bg-gray-800
+    m-2
+    ;
+}
+
+.player-data span {
+    @apply text-xs
+    uppercase
+    tracking-wider
+    text-gray-400
+    font-medium;
+}
+
+.player-button {
+    @apply flex flex-col sm:flex-row gap-4 mt-8;
+}
+
+.player-button div {
+    @apply flex-1;
+}
+
+.player-button button {
+    @apply w-full px-6 py-3
+    bg-gray-900
+    text-white
+    font-semibold
+    text-sm uppercase
+    tracking-wider
+    border border-gray-700
+    rounded-lg
+    transition-all duration-300
+    hover:bg-green-600
+    hover:border-green-600
+    hover:shadow-lg
+    active:scale-95
+    cursor-pointer;
+}
+
+.player-buy-and-follow-btn div{
+  @apply flex items-center justify-center border py-2 rounded-2xl mx-3 cursor-pointer;
+}
+
+.player-buy-and-follow-btn div button{
+  @apply cursor-pointer;
+}

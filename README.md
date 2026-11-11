@@ -1,0 +1,1 @@
+you have to collect all isl clubs and sponsers image
